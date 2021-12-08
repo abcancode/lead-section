@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+
+:root {
+  --color-accent: #34a853;
+  --color-bckg: #fafbf7;
+  --color-primary: #2c3134;
+  --color-secondary: #d7d8d9;
+  --font-primary: "Mulish", sans-serif;
+}
+
+body {
+  background: var(--color-bckg);
+  font-family: var(--font-primary);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+
+section {
+  padding: 0 2rem;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 2rem;
+  width: 24%;
+  margin-bottom: 2rem;
+}
+
+.card--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card--contents__laurens {
+  padding-bottom: 2.5rem;
+}
+
+.card--contents__emily {
+  padding-bottom: 2px;
+}
+
+.card--contents__jody {
+  padding-bottom: 2px;
+}
+
+.card--contents__jason {
+  padding-bottom: 1.5rem;
+}
+
+.card--contents__joseph {
+  padding-bottom: 4.8rem;
+}
+
+@media screen and (min-width: 249px) {
+  section {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 0.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 5.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+
+  section {
+    padding: 0 1rem;
+  }
+
+  .card {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    text-align: center;
+  }
+
+  .card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 38%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    text-align: center;
+  }
+
+  .card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 24%;
+  }
+}
+
+.card--name {
+  font-size: 1.5rem;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 249px) {
+  .card--name {
+    font-size: 1.2rem;
+  }
+}
+
+.card--image {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.card__chika {
+  background: url(../images/chika-nwobi.jpg);
+}
+
+.card__laurens {
+  background: url(../images/laurens-kreuze.jpg);
+}
+
+.card__emily {
+  background: url(../images/emilly-liggette.jpg);
+}
+
+.card__jody {
+  background: url(../images/jody-ike.jpg);
+}
+
+.card__jason {
+  background: url(../images/jason.jpeg);
+}
+
+.card__joseph {
+  background: url(../images/joseph-abah.jpg);
+}
+
+.card--title {
+  color: var(--color-secondary);
+}
+
+@media screen and (min-width: 249px) {
+  .card--title {
+    font-size: 0.8rem;
+  }
+}
+
+/* List */
+
+.card--list {
+  padding-left: 1rem;
+}
+
+.card--list__item {
+  padding: 0.3rem 0 1rem 0;
+}
+
+@media screen and (min-width: 249px) {
+  .card--list__item {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card--title {
+    font-size: 1rem;
+  }
+
+  .card--list__item {
+    font-size: 1rem;
+  }
+}
+
+/* Footer */
+
+.card--footer {
+  display: flex;
+  justify-content: start;
+  margin-top: 4rem;
+}
+
+span {
+  font-size: 1.9rem;
+  color: var(--color-accent);
+  margin-right: 1.6rem;
+}
+
+.contents {
+  font-size: 1.2rem;
+  display: flex;
+  margin-top: -1rem;
+}
+
+.contents p {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.contents p:hover,
+.link-arrow:hover {
+  color: var(--color-accent);
+}
+
+@media screen and (min-width: 249px) {
+  .contents {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contents {
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+}
